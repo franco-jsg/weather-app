@@ -1,5 +1,5 @@
 import { Fragment } from "react";
-import { useState, useEffect } from "react"
+import { useState} from "react"
 
 import Header from "./components/Header";
 import InputContainer from "./components/InputContainer";
@@ -16,10 +16,6 @@ function App() {
   const [location, setLocation] = useState('')
 
   
-  useEffect(()=> {
-
-      searchLocation()
-  }, [location])
   
   const searchLocation = async(e) => {
 
